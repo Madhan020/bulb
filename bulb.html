@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light Switch</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #light {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 50px auto;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+  <h1>Light Switch</h1>
+  <div id="light"></div>
+  <button id="onButton">Turn On</button>
+  <button id="offButton">Turn Off</button>
+
+  <script>
+    const light = document.getElementById('light');
+    const onButton = document.getElementById('onButton');
+    const offButton = document.getElementById('offButton');
+
+    onButton.addEventListener('click', () => {
+      light.style.backgroundColor = 'yellow';
+    });
+
+    offButton.addEventListener('click', () => {
+      light.style.backgroundColor = 'gray';
+    });
+  </script>
+</body>
+</html>
